@@ -49,7 +49,7 @@ module CopyCarrierwaveFile
     #    resource.remote_file_url = original_resource.avatar.url
     #
     def set_file_for_remote_storage
-      set_resource_mounter_file open(original_resource_mounter.url)
+      set_resource_mounter_file original_resource_mounter.url
     end
 
     def set_file_for_local_storage
